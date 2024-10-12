@@ -1,0 +1,1149 @@
+{
+	"info": {
+		"_postman_id": "f2f282df-3fe8-4d4a-bc32-7bf06e0f8545",
+		"name": "Sprint 2 - Team 7",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35031582"
+	},
+	"item": [
+		{
+			"name": "Deals",
+			"item": [
+				{
+					"name": "POST - create a new deal",
+					"item": [
+						{
+							"name": "Create a new Deal - min fields set",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"assignee__user\": \"1717560677241x142582647964403460\",\n  \"company_name_text\": \"K's Company\",\n  \"deal_value_estimation_number\": 13535,\n  \"name_text\": \"Lottery\",\n  \"order_number\": 5,\n  \"status_option_status\": \"In progress\",\n  \"visible_to_list_user\": [\n    \"1717560677241x142582647964403460\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/obj/deal",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"deal"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a new Deal - max fields set",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"assignee__user\": \"1717560677241x142582647964403460\",\n  \"company_name_text\": \"Company for team7\",\n  \"deal_value_estimation_number\": 50505,\n  \"description_text\": \"New deal for team7\",\n  \"file_list_custom_data_file\": [\n  ],\n  \"logo_image\": \"https://icons.getbootstrap.com/icons/7-circle/\",\n  \"funnel_custom_funnel1\": \"1717249949887x707204560107654700\",\n  \"name_text\": \"Deal2\",\n  \"order_number\": 6,\n  \"stage_custom_stage\": \"1717561532498x465020404734400200\",\n  \"status_option_status\": \"Won\",\n  \"visible_to_list_user\": [\n    \"1717560677241x142582647964403460\",\n    \"1625051658962x581289845978797800\",\n    \"1717488737309x417287978861723650\",\n    \"1717475368368x181690397246576420\",\n    \"1717472985666x307445402784460200\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/obj/deal",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"deal"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a new Deal - mandatory fields empty",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"assignee__user\": \"\",\n  \"company_name_text\": \"\",\n\n  \"description_text\": \"Team7 deal\",\n  \"file_list_custom_data_file\": [\n  ],\n  \"logo_image\": \"https://icons.getbootstrap.com/icons/7-circle/\",\n  \"funnel_custom_funnel1\": \"1717249949887x707204560107654700\",\n  \"name_text\": \"\",\n\n  \"stage_custom_stage\": \"1717561532498x465020404734400200\",\n\n  \"visible_to_list_user\": []\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/obj/deal",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"deal"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a new Deal - empty body",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/obj/deal",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"deal"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a new Deal - empty fields",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"assignee__user\": \"\",\n  \"company_name_text\": \"\",\n\n  \"description_text\": \"\",\n  \"file_list_custom_data_file\": [\n  ],\n  \"logo_image\": \"\",\n  \"funnel_custom_funnel1\": \"\",\n  \"name_text\": \"\",\n\n  \"stage_custom_stage\": \"\",\n  \"status_option_status\": \"\",\n  \"visible_to_list_user\": [\n   \n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/obj/deal",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"deal"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a new Deal - max fields set, no authorization",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"assignee__user\": \"1717560677241x142582647964403460\",\n  \"company_name_text\": \"Company for team7\",\n  \"deal_value_estimation_number\": 50506,\n  \"description_text\": \"Deal for team7 - no auth\",\n  \"file_list_custom_data_file\": [\n  ],\n  \"logo_image\": \"https://icons.getbootstrap.com/icons/7-circle/\",\n  \"funnel_custom_funnel1\": \"1717249949887x707204560107654700\",\n  \"name_text\": \"Deal2 no auth\",\n  \"order_number\": 6,\n  \"stage_custom_stage\": \"1717561532498x465020404734400200\",\n  \"status_option_status\": \"In progress\",\n  \"visible_to_list_user\": [\n    \"1717560677241x142582647964403460\",\n    \"1625051658962x581289845978797800\",\n    \"1717488737309x417287978861723650\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/obj/deal",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"deal"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a new Deal - no assignee__user",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"assignee__user\": \"\",\n  \"company_name_text\": \"Company2 for team7\",\n  \"deal_value_estimation_number\": 150,\n  \"description_text\": \"New deal for team7\",\n  \"file_list_custom_data_file\": [\n  ],\n  \"logo_image\": \"https://icons.getbootstrap.com/icons/7-circle/\",\n  \"funnel_custom_funnel1\": \"1717249949887x707204560107654700\",\n  \"name_text\": \"Deal2\",\n  \"order_number\": 6,\n  \"stage_custom_stage\": \"1717561532498x465020404734400200\",\n  \"status_option_status\": \"In progress\",\n  \"visible_to_list_user\": [\n    \"1717560677241x142582647964403460\",\n    \"1717472985666x307445402784460200\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/obj/deal",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"deal"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a new Deal - no company_name_text",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"assignee__user\": \"1717560677241x142582647964403460\",\n  \"company_name_text\": \"\",\n  \"deal_value_estimation_number\": 250,\n  \"description_text\": \"Team7 deal\",\n  \"file_list_custom_data_file\": [\n  ],\n  \"logo_image\": \"https://icons.getbootstrap.com/icons/7-circle/\",\n  \"funnel_custom_funnel1\": \"1717249949887x707204560107654700\",\n  \"name_text\": \"Team7 deals\",\n  \"order_number\": 8,\n  \"stage_custom_stage\": \"1717561532498x465020404734400200\",\n  \"status_option_status\": \"In progress\",\n  \"visible_to_list_user\": [\n    \"1717560677241x142582647964403460\",\n    \"1717488737309x417287978861723650\",\n    \"1717475368368x181690397246576420\",\n    \"1717472985666x307445402784460200\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/obj/deal",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"deal"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a new Deal - no deal_value_estimation_number",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"assignee__user\": \"1717560677241x142582647964403460\",\n  \"company_name_text\": \"Testing company\",\n  \"description_text\": \"New deal for team7, no deal value estimation nr\",\n  \"file_list_custom_data_file\": [\n  ],\n  \"logo_image\": \"https://icons.getbootstrap.com/icons/7-circle/\",\n  \"funnel_custom_funnel1\": \"1717249949887x707204560107654700\",\n  \"name_text\": \"Deal9\",\n  \"order_number\": 9,\n  \"stage_custom_stage\": \"1717561532498x465020404734400200\",\n  \"status_option_status\": \"In progress\",\n  \"visible_to_list_user\": [\n    \"1717560677241x142582647964403460\",\n    \"1717472985666x307445402784460200\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/obj/deal",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"deal"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a new Deal - no name_text",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"assignee__user\": \"1717560677241x142582647964403460\",\n  \"company_name_text\": \"Lorem ipsum\",\n  \"deal_value_estimation_number\": 350,\n  \"description_text\": \"New deal for team7\",\n  \"file_list_custom_data_file\": [\n  ],\n  \"logo_image\": \"https://icons.getbootstrap.com/icons/7-circle/\",\n  \"funnel_custom_funnel1\": \"1717249949887x707204560107654700\",\n  \"name_text\": \"\",\n  \"order_number\": 10,\n  \"stage_custom_stage\": \"1717561532498x465020404734400200\",\n  \"status_option_status\": \"In progress\",\n  \"visible_to_list_user\": [\n    \"1717560677241x142582647964403460\",\n    \"1717472985666x307445402784460200\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/obj/deal",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"deal"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a new Deal - no order_number",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"assignee__user\": \"1717560677241x142582647964403460\",\n  \"company_name_text\": \"Company for team7\",\n  \"deal_value_estimation_number\": 15,\n  \"description_text\": \"Lorem ipsum2\",\n  \"file_list_custom_data_file\": [\n  ],\n  \"logo_image\": \"https://icons.getbootstrap.com/icons/7-circle/\",\n  \"funnel_custom_funnel1\": \"1717249949887x707204560107654700\",\n  \"name_text\": \"Deal5\",\n  \"stage_custom_stage\": \"1717561532498x465020404734400200\",\n  \"status_option_status\": \"Won\",\n  \"visible_to_list_user\": [\n    \"1717560677241x142582647964403460\",\n    \"1717472985666x307445402784460200\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/obj/deal",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"deal"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a new Deal - no status_option_status",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"assignee__user\": \"1717560677241x142582647964403460\",\n  \"company_name_text\": \"Company7 for team7\",\n  \"deal_value_estimation_number\": 74,\n  \"description_text\": \"Deal for team7\",\n  \"file_list_custom_data_file\": [\n  ],\n  \"logo_image\": \"https://icons.getbootstrap.com/icons/7-circle/\",\n  \"funnel_custom_funnel1\": \"1717249949887x707204560107654700\",\n  \"name_text\": \"T7 deals\",\n  \"order_number\": 19,\n  \"stage_custom_stage\": \"1717561532498x465020404734400200\",\n  \"visible_to_list_user\": [\n    \"1717560677241x142582647964403460\",\n    \"1717488737309x417287978861723650\",\n    \"1717475368368x181690397246576420\",\n    \"1717472985666x307445402784460200\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/obj/deal",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"deal"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a new Deal - no visible_to_list_user",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"assignee__user\": \"1717560677241x142582647964403460\",\n  \"company_name_text\": \"Team7's Company\",\n  \"deal_value_estimation_number\": 22,\n  \"description_text\": \"Deal13 for team7\",\n  \"file_list_custom_data_file\": [\n  ],\n  \"logo_image\": \"https://icons.getbootstrap.com/icons/7-circle/\",\n  \"funnel_custom_funnel1\": \"1717249949887x707204560107654700\",\n  \"name_text\": \"Deal 13\",\n  \"order_number\": 13,\n  \"stage_custom_stage\": \"1717561532498x465020404734400200\",\n  \"status_option_status\": \"In progress\",\n  \"visible_to_list_user\": []\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/obj/deal",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"deal"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a new Deal - visible_to_list_user non-existent",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"assignee__user\": \"1717560677241x142582647964403460\",\n  \"company_name_text\": \"Company for team7\",\n  \"deal_value_estimation_number\": 11,\n  \"description_text\": \"New deal for team7\",\n  \"file_list_custom_data_file\": [\n  ],\n  \"logo_image\": \"https://icons.getbootstrap.com/icons/7-circle/\",\n  \"funnel_custom_funnel1\": \"1717249949887x707204560107654700\",\n  \"name_text\": \"Lorem ipsum 3\",\n  \"order_number\": 14,\n  \"stage_custom_stage\": \"1717561532498x465020404734400200\",\n  \"status_option_status\": \"Won\",\n  \"visible_to_list_user\": [\n    \"1717560677241\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/obj/deal",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"deal"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a new Deal - order_number string",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"assignee__user\": \"1717560677241x142582647964403460\",\n  \"company_name_text\": \"Company for team7\",\n  \"deal_value_estimation_number\": 120,\n  \"description_text\": \"lorem ipsum 7\",\n  \"file_list_custom_data_file\": [\n  ],\n  \"logo_image\": \"https://icons.getbootstrap.com/icons/7-circle/\",\n  \"funnel_custom_funnel1\": \"1717249949887x707204560107654700\",\n  \"name_text\": \"lorem ipsum 7\",\n  \"order_number\": \"One\",\n  \"stage_custom_stage\": \"1717561532498x465020404734400200\",\n  \"status_option_status\": \"In progress\",\n  \"visible_to_list_user\": [\n    \"1717560677241x142582647964403460\",\n    \"1717488737309x417287978861723650\",\n    \"1717475368368x181690397246576420\",\n    \"1717472985666x307445402784460200\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/obj/deal",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"deal"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a new Deal - name_text boolean",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"assignee__user\": \"1717560677241x142582647964403460\",\n  \"company_name_text\": \"Company for team7\",\n  \"deal_value_estimation_number\": 120,\n  \"description_text\": \"lorem ipsum 7\",\n  \"file_list_custom_data_file\": [\n  ],\n  \"logo_image\": \"https://icons.getbootstrap.com/icons/7-circle/\",\n  \"funnel_custom_funnel1\": \"1717249949887x707204560107654700\",\n  \"name_text\": true,\n  \"order_number\": 15,\n  \"stage_custom_stage\": \"1717561532498x465020404734400200\",\n  \"status_option_status\": \"In progress\",\n  \"visible_to_list_user\": [\n    \"1717560677241x142582647964403460\",\n    \"1717488737309x417287978861723650\",\n    \"1717475368368x181690397246576420\",\n    \"1717472985666x307445402784460200\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/obj/deal",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"deal"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a new Deal - deal_value_estimation_number string",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"assignee__user\": \"1717560677241x142582647964403460\",\n  \"company_name_text\": \"Company for team7\",\n  \"deal_value_estimation_number\": \"One\",\n  \"description_text\": \"lorem ipsum 7\",\n  \"file_list_custom_data_file\": [\n  ],\n  \"logo_image\": \"https://icons.getbootstrap.com/icons/7-circle/\",\n  \"funnel_custom_funnel1\": \"1717249949887x707204560107654700\",\n  \"name_text\": \"lorem ipsum7\",\n  \"order_number\": 15,\n  \"stage_custom_stage\": \"1717561532498x465020404734400200\",\n  \"status_option_status\": \"In progress\",\n  \"visible_to_list_user\": [\n    \"1717560677241x142582647964403460\",\n    \"1717488737309x417287978861723650\",\n    \"1717475368368x181690397246576420\",\n    \"1717472985666x307445402784460200\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/obj/deal",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"deal"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a new Deal - company_name_text numeric",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"assignee__user\": \"1717560677241x142582647964403460\",\n  \"company_name_text\": 7,\n  \"deal_value_estimation_number\": 123,\n  \"description_text\": \"lorem ipsum 7\",\n  \"file_list_custom_data_file\": [\n  ],\n  \"logo_image\": \"https://icons.getbootstrap.com/icons/7-circle/\",\n  \"funnel_custom_funnel1\": \"1717249949887x707204560107654700\",\n  \"name_text\": \"lorem ipsum7\",\n  \"order_number\": 15,\n  \"stage_custom_stage\": \"1717561532498x465020404734400200\",\n  \"status_option_status\": \"In progress\",\n  \"visible_to_list_user\": [\n    \"1717560677241x142582647964403460\",\n    \"1717488737309x417287978861723650\",\n    \"1717475368368x181690397246576420\",\n    \"1717472985666x307445402784460200\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/obj/deal",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"deal"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a new Deal - stage_option_status boolean",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"assignee__user\": \"1717560677241x142582647964403460\",\n  \"company_name_text\": \"7 Company\",\n  \"deal_value_estimation_number\": 123,\n  \"description_text\": \"lorem ipsum 7\",\n  \"file_list_custom_data_file\": [\n  ],\n  \"logo_image\": \"https://icons.getbootstrap.com/icons/7-circle/\",\n  \"funnel_custom_funnel1\": \"1717249949887x707204560107654700\",\n  \"name_text\": \"lorem ipsum7\",\n  \"order_number\": 15,\n  \"stage_custom_stage\": \"1717561532498x465020404734400200\",\n  \"status_option_status\": false,\n  \"visible_to_list_user\": [\n    \"1717560677241x142582647964403460\",\n    \"1717488737309x417287978861723650\",\n    \"1717475368368x181690397246576420\",\n    \"1717472985666x307445402784460200\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/obj/deal",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"deal"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a new Deal - stage_option_status numeric",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"assignee__user\": \"1717560677241x142582647964403460\",\n  \"company_name_text\": \"Company 7\",\n  \"deal_value_estimation_number\": 121,\n  \"description_text\": \"lorem ipsum 7\",\n  \"file_list_custom_data_file\": [\n  ],\n  \"logo_image\": \"https://icons.getbootstrap.com/icons/7-circle/\",\n  \"funnel_custom_funnel1\": \"1717249949887x707204560107654700\",\n  \"name_text\": \"lorem ipsum7\",\n  \"order_number\": 13,\n  \"stage_custom_stage\": \"1717561532498x465020404734400200\",\n  \"status_option_status\": 2,\n  \"visible_to_list_user\": [\n    \"1717560677241x142582647964403460\",\n    \"1717488737309x417287978861723650\",\n    \"1717475368368x181690397246576420\",\n    \"1717472985666x307445402784460200\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/obj/deal",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"deal"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "DELETE - delete deal",
+					"item": [
+						{
+							"name": "Delete deal by UniqueId",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/obj/deal/:UniqueID",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"deal",
+										":UniqueID"
+									],
+									"variable": [
+										{
+											"key": "UniqueID",
+											"value": "1717644305308x610064501580011500"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete deal by UniqueId - no auth",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/obj/deal/:UniqueID",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"deal",
+										":UniqueID"
+									],
+									"variable": [
+										{
+											"key": "UniqueID",
+											"value": "1717644457422x439698787269412200"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete deal by UniqueId - non-existent",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/obj/deal/:UniqueID",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"deal",
+										":UniqueID"
+									],
+									"variable": [
+										{
+											"key": "UniqueID",
+											"value": "1717644305308x610064501580011"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Notes",
+			"item": [
+				{
+					"name": "GET - the list of all notes",
+					"item": [
+						{
+							"name": "Get list of Notes",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/obj/note",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"note"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get list of Notes - no auth",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/obj/note",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"note"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get list of Notes - limit 25",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/obj/note?limit=25",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"note"
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "25"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get list of Notes - negative limit",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/obj/note?limit=-1",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"note"
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "-1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get list of Notes - negative cursor",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/obj/note?cursor=-1",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"note"
+									],
+									"query": [
+										{
+											"key": "cursor",
+											"value": "-1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get list of Notes - cursor 0",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/obj/note?cursor=0",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"note"
+									],
+									"query": [
+										{
+											"key": "cursor",
+											"value": "0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get list of Notes - cursor 5",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/obj/note?cursor=5",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"note"
+									],
+									"query": [
+										{
+											"key": "cursor",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get list of Notes - sort_field content_text",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/obj/note?sort_field=content_text",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"note"
+									],
+									"query": [
+										{
+											"key": "sort_field",
+											"value": "content_text"
+										},
+										{
+											"key": "descending",
+											"value": "true",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get list of Notes - descending Created Date",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/obj/note?sort_field=Created Date&descending=true",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"note"
+									],
+									"query": [
+										{
+											"key": "sort_field",
+											"value": "Created Date"
+										},
+										{
+											"key": "descending",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get list of Notes - constraints content_text",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/obj/note?constraints=[{ \"key\": \"content_text\", \"constraint_type\": \"text contains\", \"value\": \"customer\" }]",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"note"
+									],
+									"query": [
+										{
+											"key": "constraints",
+											"value": "[{ \"key\": \"content_text\", \"constraint_type\": \"text contains\", \"value\": \"customer\" }]"
+										},
+										{
+											"key": "constraints",
+											"value": "[{ \"key\": \"content_text\", \"constraint_type\": \"equals\", \"value\":  \"Contacted customer via email. Waiting for their respond.\"}]",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PATCH - modify note data",
+					"item": [
+						{
+							"name": "Modify note data",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"content_text\": \"Contacted customer via email. Waiting for their response.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/obj/note/:UniqueID",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"note",
+										":UniqueID"
+									],
+									"variable": [
+										{
+											"key": "UniqueID",
+											"value": "1717475124568x137755684876412100"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Modify note data - no auth",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"content_text\": \"Contacted customer via email. Waiting for their respond.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/obj/note/:UniqueID",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"note",
+										":UniqueID"
+									],
+									"variable": [
+										{
+											"key": "UniqueID",
+											"value": "1717475124568x137755684876412100"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Modify note data - content_text boolean",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"content_text\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/obj/note/:UniqueID",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"note",
+										":UniqueID"
+									],
+									"variable": [
+										{
+											"key": "UniqueID",
+											"value": "1717475124568x137755684876412100"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Modify note data - content_text numeric",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"content_text\": 3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/obj/note/:UniqueID",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"note",
+										":UniqueID"
+									],
+									"variable": [
+										{
+											"key": "UniqueID",
+											"value": "1717475124568x137755684876412100"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "GET - the list of all users",
+					"item": [
+						{
+							"name": "Get list of Users",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/obj/user",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"user"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "GET - user by Id",
+					"item": [
+						{
+							"name": "Get User by Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/obj/user/:UniqueId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"obj",
+										"user",
+										":UniqueId"
+									],
+									"variable": [
+										{
+											"key": "UniqueId",
+											"value": "1696659261091x541239446325940200"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "in",
+				"value": "query",
+				"type": "string"
+			},
+			{
+				"key": "value",
+				"value": "b30ca93d0a7ebe389e9326a22497bf38",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "api_token",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://cerebrumhubcrmlite.bubbleapps.io/api/1.1"
+		}
+	]
+}
