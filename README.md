@@ -1,29 +1,25 @@
+```markdown
 # CRM Application
 
-A manual testing project for a Customer Relationship Management (CRM) system, focusing on API testing and user management functionalities.
+A custom CRM platform developed for Elevate Digital to manage leads, deals, and customer interactions efficiently.
 
-## Project Overview
+## Features
 
-This project involves testing various aspects of a CRM application, including user invitations, stage management, and API integrations.
+- **Leads Management**: Create and manage customer databases.
+- **User Invitations**: Invite new users to the platform.
+- **Funnels Management**: Create and manage CRM funnels.
+- **Deals Management**: Handle deals within different funnels.
+- **API Integration**: Comprehensive API for all functionalities.
+- **Testing**: Includes Postman collections for API testing and end-to-end test cases.
 
-## Testing Artifacts
+## Installation
 
-- Postman collections for API testing
-- Test case documents
-- Bug reports
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/kadikristel/CRM-App.git
+   cd CRM-App
 
-## Technologies Used
-
-- Manual testing methodologies
-- Postman
-- PDF documentation
-
-## Getting Started
-
-Import the provided Postman collections to explore and test the CRM APIs.
-
-
-## API documentation ##
+## API documentation 
 
 **Sprint 1**
 
