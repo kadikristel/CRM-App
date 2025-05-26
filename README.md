@@ -1,4 +1,29 @@
-API documentation
+# CRM Application
+
+A manual testing project for a Customer Relationship Management (CRM) system, focusing on API testing and user management functionalities.
+
+## Project Overview
+
+This project involves testing various aspects of a CRM application, including user invitations, stage management, and API integrations.
+
+## Testing Artifacts
+
+- Postman collections for API testing
+- Test case documents
+- Bug reports
+
+## Technologies Used
+
+- Manual testing methodologies
+- Postman
+- PDF documentation
+
+## Getting Started
+
+Import the provided Postman collections to explore and test the CRM APIs.
+
+
+## API documentation ##
 
 **Sprint 1**
 
